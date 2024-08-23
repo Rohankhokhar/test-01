@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+void reverstring(char str[]){
+	int start = 0;
+	int end = 0;
+	
+	while(str[end] != '\0'){
+		end++ ;
+	}
+	end--;
+	while(start<end){
+		char temp = str[start];
+		str[start] = str[end];
+		str[end] = temp;
+		
+		start++ ;
+		end--;
+	}
+}
+int main(){
+	char str[100];
+	int i = 0;
+	
+	printf("enter string :");
+	fgets(str,sizeof(str),stdin);
+	
+	while(str[i] != '\0'){
+		if (str[i] == '\n'){
+            str[i] = '\0';
+            break;
+        }
+        i++;
+	}
+	reverstring(str);
+	printf("string : %s\n",str);
+}

@@ -1,0 +1,38 @@
+//18] Write a C program to implement a simple calculator using switch-case statements that performs addition, subtraction, multiplication, and division.
+#include<stdio.h>
+int main(){
+	int num1,num2,ans;
+	char option;
+	
+	printf("enter a num1 value:");
+	scanf("%d",&num1);
+	
+	printf("enter a num2 value :");
+	scanf("%d",&num2);
+	
+	printf("plase choose (+,-,/,*):");
+	scanf(" %c",&option);
+	
+	switch(option){
+		case '+':
+			printf("your option is add :");
+			ans = num1 + num2;
+		break;
+		case '-':
+			printf("your option is sub :");
+			ans = num1 - num2;
+		break;
+		case '*':
+			printf("your option is mul :");
+			ans = num1 * num2;
+		break;
+		case '/':
+			printf("your option is div :");
+			ans = num1 / num2;
+		break;	
+	}
+	printf("your ans is : %d",ans);
+}
+
+
+}
