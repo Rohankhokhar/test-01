@@ -1,0 +1,11 @@
+//19] Explain what a pointer to a pointer is in C and give an example.
+#include<stdio.h>
+int main(){
+	int i = 1;
+	int* ptr = &i;
+	int** ptr2 = &ptr;
+	
+	printf("i is %d\n",i);
+	printf("1 pointr value %d\n",*ptr);
+	printf("pointer of pointer is %d\n",**ptr2);
+}

@@ -1,0 +1,24 @@
+// 13] Write a C program to find the smallest element in an array of integers.
+#include<stdio.h>
+int main(){
+	int i,n;
+	
+	printf("enter value elements of arr :");
+	scanf("%d",&n);
+	
+	int arr[n];
+	
+	printf("enter element of arr :");
+	for(i=0;i<n;i++){
+		scanf("%d",&arr[i]);
+	}
+	
+	int smallest = arr[0];
+	
+    for(i=0;i<n;i++){
+    	if(arr[i]<arr[0]){
+    		smallest = arr[i]; 
+		}
+	}
+	printf("smallest alement of arr is :%d",smallest);
+}

@@ -1,0 +1,17 @@
+//10] Write a function in C that takes an integer and returns its square.
+#include<stdio.h>
+int squre (int l){
+	int squre1;
+    squre1 = l * l;
+	return squre1 ;
+}
+
+int main(){
+	int l;
+	
+	printf("enter value of squre length :");
+	scanf("%d",&l);
+	
+	int res = squre(l);
+	printf("squre :%d",res);
+}
